@@ -1,0 +1,146 @@
+<style>
+body {
+    font-size: 20px;
+    font-family: 'Work Sans';
+}
+
+p{
+  font-size: 19px;
+  font-family: 'Work Sans';
+}
+
+
+ hr{
+   border: 1;
+  width: 100%;
+ }
+
+ div.ex1 {
+    padding-top: 15px;
+     width:1000px;
+     margin: auto;
+     text-align:justify;
+
+ }
+
+ div.ex2 {
+     max-width:500px;
+     margin: auto;
+     border: 3px solid #73AD21;
+ }
+
+ .column {
+     float: left;
+     padding: 10px;
+ }
+
+ .left {
+   width: 50%;
+ }
+
+ .right {
+   width: 50%;
+ }
+
+
+ /* Clear floats after the columns */
+ .row:after {
+     content: "";
+     display: table;
+     clear: both;
+ }
+
+ .square_btn {
+    position: relative;
+    display: inline-block;
+    font-weight: bold;
+    padding: 12px 0 8px;
+    text-decoration: none;
+    color: #DA9092;
+    transition: .4s;
+}
+
+.square_btn:before{
+   position: absolute;
+   content: '';
+   width: 100%;
+   height: 4px;
+   top:100%;
+   left: 0;
+   border-radius: 3px;
+   background:#DA9092;
+   transition: .2s;
+}
+
+.square_btn:after{
+   position: absolute;
+   content: '';
+   width: 100%;
+   height: 4px;
+   top:0;
+   left: 0;
+   border-radius: 3px;
+   background:#DA9092;
+   transition: .2s;
+}
+
+.square_btn:hover:before {
+    top: -webkit-calc(100% - 3px);
+    top: calc(100% - 3px);
+}
+
+.square_btn:hover:after {
+    top: 3px;
+}
+
+  #centeredmenu {
+     float:left;
+     width:100%;
+
+
+     overflow:hidden;
+     position:relative;
+  }
+  #centeredmenu ul {
+     clear:left;
+     float:left;
+     list-style:none;
+     margin:0;
+     padding:0;
+     position:relative;
+     left:50%;
+     text-align:center;
+  }
+  #centeredmenu ul li {
+     display:block;
+     float:left;
+     list-style:none;
+     margin:0;
+     padding:0;
+     position:relative;
+     right:50%;
+     width: 250px;
+     padding-bottom: 30px;
+  }
+  #centeredmenu ul li a {
+     display:block;
+     margin:0 0 0 0px;
+     padding:3px 10px;
+     background:#828282;
+     color:#ffffff;
+     text-decoration:none;
+     line-height:2.3em;
+     font-family: 'Work Sans';
+     font-size: 15px;
+  }
+  #centeredmenu ul li a:hover {
+     background:#B8B8B8;
+     color:#fff;
+  }
+  #centeredmenu ul li a.active,
+  #centeredmenu ul li a.active:hover {
+     color:#fff;
+     background:#B8B8B8;
+     font-weight:bold;
+  }
+</style>
